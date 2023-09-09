@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+nav{
+  background-color: antiquewhite;
+  padding:10px 0;
+}
+nav ul {
+  display: flex;
+
+}
+nav ul li{
+  margin: 0 20px;
+}
+.product-images img{
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.btn{
+  border: solid 1px black;
+  padding:10px;
+  background-color: blueviolet;
+  color: aliceblue;
+}
